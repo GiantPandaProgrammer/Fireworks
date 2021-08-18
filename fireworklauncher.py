@@ -39,11 +39,11 @@ while running:
     firework_one.updateStep()
     firework_one.drawShoot(pygame, screen)
 
-    firework_two.updateStep()
-    firework_two.drawShoot(pygame, screen)
+    #firework_two.updateStep()
+    #firework_two.drawShoot(pygame, screen)
 
-    firework_three.updateStep()
-    firework_three.drawShoot(pygame, screen)
+    #firework_three.updateStep()
+    #firework_three.drawShoot(pygame, screen)
     # if (step == 100):
     #     explosion_center = point(points[0].x, points[0].y)
     #     for i in range(0, num_points):

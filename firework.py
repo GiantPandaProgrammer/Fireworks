@@ -35,11 +35,11 @@ class firework():
             color = self.color
             color_range = self.width
             currentColorStep = self.step - self.height
-            if currentColorStep > 0:
-                float(currentColorStep) / self.width
+            percentSize = 1
+            if currentColorStep > 0 and currentColorStep < self.width:
+                percentSize = float(currentColorStep) / self.width
 
+            #Parabolic function?
             sparksize = self.sparksize
 
-            print(self.color)
-
-            py.draw.circle(screen, self.color, (self.sparks[i].x, self.sparks[i].y), sparksize)
+            py.draw.circle(screen, self.color, (self.sparks[i].x, self.sparks[i].y), sparksize * percentSize)
