@@ -15,9 +15,9 @@ running = True
 step = 0
 #points = [point(250, 500)]
 explosion_center = None
-firework_one = firework(startingX=250, startingY=500, num_points=10, color=(0,0,255), height=100, width=30, sparksize=10)
-firework_two = firework(startingX=150, startingY=500, num_points=10, color=(255,0,0), height=100, width=30, sparksize=10)
-firework_three = firework(startingX=350, startingY=500, num_points=10, color=(0,255,0), height=200, width=30, sparksize=10)
+firework_one = firework(startingX=250, startingY=500, num_points=10, color=(0,0,255), height=100, width=50, maxSparksize=5)
+firework_two = firework(startingX=150, startingY=500, num_points=10, color=(255,0,0), height=100, width=30, maxSparksize=10)
+firework_three = firework(startingX=350, startingY=500, num_points=10, color=(0,255,0), height=200, width=30, maxSparksize=10)
 
 while running:
 
