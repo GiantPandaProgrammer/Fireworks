@@ -2,6 +2,9 @@ import time
 import pygame
 from firework import firework
 
+# TODO
+# Add quit event
+
 pygame.init()
 num_points = 20
 fps = 0.01
@@ -17,6 +20,7 @@ explosion_center = None
 
 
 fireworks = []
+print(fireworks)
 while running:
 
     # Did the user click the window close button?
@@ -26,9 +30,10 @@ while running:
             firework_one = firework(startingX=pos[0], startingY=pos[1], num_points=10, color=(255, 255, 255), height=100,
                                     width=200,
                                     maxSparksize=20)
+            print(fireworks)
             fireworks = fireworks + [firework_one]
 
-    fireworks = filter(lambda firework: not firework.isDone(), fireworks)
+    fireworks = list(filter(lambda firework: not firework.isDone(), fireworks))
     step = step + 1
     i = 0
     time.sleep(fps)
